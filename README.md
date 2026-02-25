@@ -17,3 +17,21 @@ Techniques:
 - POPF and Trap Flag
 - Stack Segment Register
 
+[[Windows]](https://evasions.checkpoint.com/src/Anti-Debug/techniques/debug-flags.html#manual-checks)
+- Win32 API
+   - IsDebuggerPresent()
+   - CheckRemoteDebuggerPresent()
+   - NtQueryInformationProcess()
+      - ProcessDebugPort
+      - ProcessDebugFlags
+      - ProcessDebugObjectHandle
+   - RtlQueryProcessHeapInformation()
+   - RtlQueryProcessDebugInformation()
+   - NtQuerySystemInformation()
+
+- Manual Checks
+   - BeingDebugged Flag
+   - NtGlobalFlag
+   - Heap Flags
+   - Heap Protection
+   - Check KUSER_SHARED_DATA structure
