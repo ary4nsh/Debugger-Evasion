@@ -35,3 +35,6 @@ Techniques:
    - Heap Flags
    - Heap Protection
    - Check KUSER_SHARED_DATA structure
+
+[Linux]
+- ptrace_traceme
