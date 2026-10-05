@@ -11,7 +11,7 @@ Flags related to debugging include:
 The assembly code for this is:
 
 - 32Bit Process
-```
+```asm
 mov eax, fs:[30h]
 mov al, [eax+68h]
 and al, 70h
@@ -20,7 +20,7 @@ jz  being_debugged
 ```
 
 - 64Bit Process
-```
+```asm
 mov rax, gs:[60h]
 mov al, [rax+BCh]
 and al, 70h
@@ -29,7 +29,7 @@ jz  being_debugged
 ```
 
 - WOW64 Process
-```
+```asm
 mov eax, fs:[30h]
 mov al, [eax+10BCh]
 and al, 70h
