@@ -17,7 +17,7 @@ being_debugged:
 ```
 
 - x86-64 Assembly
-```
+```asm
     lea rdx, [bDebuggerPresent]
     mov rcx, -1 ; GetCurrentProcess()
     call CheckRemoteDebuggerPresent
